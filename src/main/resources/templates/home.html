@@ -6,10 +6,10 @@
 </head>
 <body>
 <form action="/home" method="get">
-    <p th:text="${title}"></p>
+    <h3 style='margin:30px;' th:text="${title}"></h3>
     <p><span>Number1</span><span style='margin:108px;'>Number2</span></p>
-    <p><label for="input1"></label><input id="input1" th:value="${number1}" name="firstNumber"  type="" size="15" >
-       <label for="input2"></label><input id="input2" th:value="${number2}" name="secondNumber" type="number" size="15" style='margin-left:20px;'></p>
+    <p><label for="input1"></label><input id="input1" th:value="${number1}" name="firstNumber"  type="text" size="15">
+       <label for="input2"></label><input id="input2" th:value="${number2}" name="secondNumber" type="text" size="15" style='margin-left:20px;'></p>
 
     <p><button id="butt_add" name="action" type="submit" value="addition">      Сложить </button><span>  </span><span id="str1" th:text="${ADD}"></span></p>
     <p><button id="butt_mul" name="action" type="submit" value="multiplication">Умножить</button><span>  </span><span id="str2" th:text="${MUL}"></span></p>
