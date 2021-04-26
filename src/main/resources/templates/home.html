@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <title th:text="${title}"></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -13,6 +13,7 @@
 
     <p><button id="butt_add" name="action" type="submit" value="addition">      Сложить </button><span>  </span><span id="str1" th:text="${ADD}"></span></p>
     <p><button id="butt_mul" name="action" type="submit" value="multiplication">Умножить</button><span>  </span><span id="str2" th:text="${MUL}"></span></p>
+    <p><button id="butt_both" name="action" type="submit" value="">      Выполнить оба действия </button><span>  </span></p>
 </form>
 </body>
 </html>
